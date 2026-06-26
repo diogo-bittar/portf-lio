@@ -183,7 +183,7 @@ nav a.active::after {
 /* ===== VIEWS INTERNAS ===== */
 .view-inner {
   max-width: 860px;
-  margin: 0 auto;
+  margin: 0 auto 0 10%;
   padding: 60px 24px;
 }
 
@@ -212,6 +212,11 @@ nav a.active::after {
   color: #aaa;
   line-height: 1.7;
   margin-bottom: 16px;
+}
+
+.highlight {
+  color: #00bcd4;
+  font-weight: 500;
 }
 
 .skills-list {
@@ -274,17 +279,28 @@ nav a.active::after {
 .timeline-item {
   position: relative;
   margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  animation: fadeUp 0.4s ease forwards;
 }
 
 .timeline-item::before {
   content: "";
   position: absolute;
   left: -28px;
-  top: 6px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: #00bcd4;
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .timeline-period {
@@ -303,6 +319,22 @@ nav a.active::after {
 .timeline-place {
   font-size: 0.88rem;
   color: #666;
+}
+
+.timeline-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 10px;
+  flex-shrink: 0;
+  mix-blend-mode: lighten;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.75;
+}
+
+.timeline-logo:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 /* PROJETOS */
@@ -414,4 +446,5 @@ footer {
   nav { padding: 14px 20px; }
   .sobre-grid, .contato-grid { grid-template-columns: 1fr; }
   .home-title { font-size: 2.2rem; }
+  .view-inner { margin: 0 auto; }
 }
