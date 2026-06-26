@@ -7,7 +7,7 @@ Este repositório contém o código-fonte do meu portfólio pessoal, desenvolvid
 
 O portfólio foi projetado para servir como uma plataforma central de apresentação profissional, reunindo informações relevantes sobre minha formação, experiências, competências e principais trabalhos desenvolvidos.
 
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas no portfólio
 
 - HTML5
 - CSS3
@@ -49,9 +49,9 @@ Abra o arquivo `index.html` em qualquer navegador moderno.
 
 ## Objetivos
 
-* Consolidar minha presença profissional na área de tecnologia;
+* Ingressar na área tecnológica;
 * Disponibilizar meus principais projetos em um único ambiente;
-* Demonstrar conhecimentos em desenvolvimento web front-end.
+* Demonstrar meu desenvolvimento e meu conhecimento.
 
 ---
 
