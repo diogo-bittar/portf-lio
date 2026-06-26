@@ -53,13 +53,6 @@ Abra o arquivo `index.html` em qualquer navegador moderno.
 * Disponibilizar meus principais projetos em um único ambiente;
 * Demonstrar conhecimentos em desenvolvimento web front-end.
 
-## Autor
-
-Diogo Bittar
-
-* GitHub: https://github.com/diogo-bittar
-* LinkedIn: https://www.linkedin.com/in/seu-perfil
-
 ---
 
 Desenvolvido por Diogo Bittar.
