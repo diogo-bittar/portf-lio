@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diogo Bittar | Portfolio</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./script.js">
 </head>
 <body>
 
@@ -21,7 +20,6 @@
   </nav>
 </header>
 
-<!-- HOME -->
 <div id="home" class="view active">
   <div class="home-content">
     <p class="home-tag">Software Engineering</p>
@@ -32,9 +30,11 @@
       <button class="btn-outline" onclick="showView('contato')">Entrar em contato</button>
     </div>
   </div>
+  <div class="home-photo-container">
+    <span>Sua Foto Aqui</span>
+    </div>
 </div>
 
-<!-- SOBRE -->
 <div id="sobre" class="view">
   <div class="view-inner">
     <h2>Sobre</h2>
@@ -73,85 +73,79 @@
   </div>
 </div>
 
-<!-- FORMACAO -->
 <div id="formacao" class="view">
   <div class="view-inner">
-    <h2>Formação</h2>
-    <div class="section-divider"></div>
-    <div class="timeline">
-
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <div class="timeline-period">2026 — 2029</div>
-          <div class="timeline-title">Engenharia de Software</div>
-          <div class="timeline-place">FIAP — São Paulo, SP</div>
+    <div class="trajectory-grid">
+      
+      <div class="trajectory-column">
+        <h2>Experiência <span>Profissional</span></h2>
+        <div class="section-divider"></div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-period">2026 — Atual</div>
+              <div class="timeline-title">Jovem Aprendiz — Técnicas Administrativas</div>
+              <div class="timeline-place">SNEF Brasil</div>
+            </div>
+          </div>
         </div>
-        <img class="timeline-logo" src="images/fiap.png" alt="FIAP">
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <div class="timeline-period">2026 — Atual</div>
-          <div class="timeline-title">Jovem Aprendiz — Técnicas Administrativas</div>
-          <div class="timeline-place">SNEF Brasil</div>
+      <div class="trajectory-column">
+        <h2>Formação <span>Acadêmica</span></h2>
+        <div class="section-divider"></div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-period">2026 — 2029</div>
+              <div class="timeline-title">Engenharia de Software</div>
+              <div class="timeline-place">FIAP — São Paulo, SP</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-period">2014 — 2025</div>
+              <div class="timeline-title">Ensino Básico ao Médio</div>
+              <div class="timeline-place">Colégio Padre Moye</div>
+            </div>
+          </div>
         </div>
-        <img class="timeline-logo" src="images/snef.jpg" alt="SNEF Brasil">
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <div class="timeline-period">2014 — 2025</div>
-          <div class="timeline-title">Ensino Básico ao Médio</div>
-          <div class="timeline-place">Colégio Padre Moye</div>
-        </div>
-        <img class="timeline-logo" src="images/padremoye.jpg" alt="Colégio Padre Moye">
       </div>
 
     </div>
   </div>
 </div>
 
-    </div>
-  </div>
-</div>
-
-    </div>
-  </div>
-</div>
-<!-- PROJETOS -->
 <div id="projetos" class="view">
   <div class="view-inner">
-    <h2>Projetos</h2>
+    <h2>Projetos <span>Desenvolvidos</span></h2>
     <div class="section-divider"></div>
     <div class="projects-grid">
       <div class="project-card">
-        <h3>Fly-Space</h3>
+        <h3>Fly-<span>Space</span></h3>
         <p>Simulação de prevenção de colisões orbitais com Python. Projeto acadêmico com deploy no GitHub Pages.</p>
         <div class="project-tags">
           <span class="project-tag">Python</span>
           <span class="project-tag">GitHub Pages</span>
         </div>
-        <!-- COLOQUE O LINK DO REPOSITÓRIO DO FLY-SPACE AQUI -->
-        <!-- <a href="SEU_LINK_AQUI" target="_blank">Ver repositório</a> -->
+        <a href="https://github.com/diogo-bittar/sprint1-frontend.git" target="_blank" class="project-link">Ver Repositório</a>
       </div>
       <div class="project-card">
-        <h3>Layout JOVI</h3>
+        <h3>Layout <span>JOVI</span></h3>
         <p>Layout desenvolvido como entrega acadêmica para o projeto JOVI, com foco em prototipação de interface.</p>
         <div class="project-tags">
           <span class="project-tag">HTML</span>
           <span class="project-tag">CSS</span>
         </div>
-        <!-- COLOQUE O LINK DO REPOSITÓRIO DO LAYOUT JOVI AQUI -->
-        <!-- <a href="SEU_LINK_AQUI" target="_blank">Ver repositório</a> -->
+        <a href="https://github.com/Commmits-e-Devs/GSPY1-Primeiro-semestre.git" target="_blank" class="project-link">Ver Repositório</a>
       </div>
     </div>
   </div>
 </div>
 
-<!-- CONTATO -->
 <div id="contato" class="view">
   <div class="view-inner">
-    <h2>Contato</h2>
+    <h2>Entrar em <span>Contato</span></h2>
     <div class="section-divider"></div>
     <div class="contato-grid">
       <div class="contato-links">
@@ -176,7 +170,7 @@
       </div>
       <div class="contato-msg">
         <p>Aberto a oportunidades. Se quiser conversar sobre um projeto ou só trocar uma ideia, me manda uma mensagem.</p>
-        <p style="color: #555; font-size: 0.85rem;">Respondo em até 48h.</p>
+        <p style="color: #6b7280; font-size: 0.85rem;">Respondo em até 48h.</p>
       </div>
     </div>
   </div>
