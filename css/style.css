@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: #030712;
   background-image: radial-gradient(circle at 10% 10%, #111827 0%, #030712 100%);
   background-attachment: fixed;
@@ -31,14 +33,21 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 8%;
+  gap: 15px;
 }
 
 .nav-logo {
-  font-size: 1.2rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.4rem;
   font-weight: 800;
-  color: #22d3ee;
+  color: #22d3ee; 
   cursor: pointer;
   letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+
+.nav-logo:hover {
+  text-shadow: 0 0 12px rgba(34, 211, 238, 0.6); 
 }
 
 nav ul {
@@ -111,9 +120,28 @@ h2, h3, .home-title {
   letter-spacing: -0.02em;
 }
 
-h2 span, h3 span, .home-title span {
+
+h2 span, h3 span {
   color: #22d3ee;
 }
+
+
+.home-title span {
+  color: #22d3ee;
+  display: inline-block;
+  animation: pulseGlow 3s ease-in-out infinite; 
+}
+
+
+@keyframes pulseGlow {
+  0%, 100% {
+    text-shadow: 0 0 0px rgba(34, 211, 238, 0);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(34, 211, 238, 0.6);
+  }
+}
+
 
 .section-divider {
   width: 50px;
@@ -156,17 +184,14 @@ h2 span, h3 span, .home-title span {
   line-height: 1.1;
   margin-bottom: 20px;
   color: #f9fafb;
+  display: flex;
+  gap: 12px;
 }
 
 .home-sub {
   font-size: 1.1rem;
   color: #9ca3af;
   margin-bottom: 36px;
-}
-
-.home-btns {
-  display: flex;
-  gap: 16px;
 }
 
 
@@ -225,18 +250,22 @@ h2 span, h3 span, .home-title span {
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 24px;
+  gap: 54px; /* Mantido o espaçamento maior entre as tags */
+  margin-top: 26px;
 }
 
 .skill-tag {
-  background: #111827;
-  border: 1px solid #374151;
   color: #22d3ee;
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.skill-tag i {
+  font-size: 1.9rem; /* Ícone grande e imponente */
+  display: flex;
+  align-items: center;
 }
 
 .sobre-info {
@@ -459,7 +488,6 @@ h2 span, h3 span, .home-title span {
   margin-bottom: 16px;
 }
 
-
 footer {
   text-align: center;
   padding: 40px 24px;
@@ -468,7 +496,6 @@ footer {
   color: #4b5563;
   font-size: 0.85rem;
 }
-
 
 @media (max-width: 768px) {
   nav { 
@@ -497,9 +524,96 @@ footer {
     grid-template-columns: 1fr; 
     gap: 40px; 
   }
-  
-  .home-btns { 
-    justify-content: center; 
+}
+
+/* =========================
+    TERMINAL HOME
+========================= */
+.terminal-card {
+  width: 100%;
+  max-width: 520px;
+  margin-top: 48px;
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .35);
+  animation: floatTerminal 6s ease-in-out infinite;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.terminal-card:hover {
+  transform: translateY(-5px) scale(1.01);
+  border-color: rgba(34, 211, 238, 0.4); 
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45), 
+              0 0 20px rgba(34, 211, 238, 0.15); 
+}
+
+.terminal-header {
+  display: flex;
+  gap: 8px;
+  padding: 14px 18px;
+  background: #111827;
+  border-bottom: 1px solid #1f2937;
+}
+
+.terminal-header span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.terminal-header span:nth-child(1) {
+  background: #ff5f56;
+}
+
+.terminal-header span:nth-child(2) {
+  background: #ffbd2e;
+}
+
+.terminal-header span:nth-child(3) {
+  background: #27c93f;
+}
+
+.terminal-body {
+  padding: 28px;
+  font-family: 'Fira Code', monospace; 
+  color: #e5e7eb;
+  line-height: 2;
+  font-size: 1rem;
+}
+
+.code-key {
+  color: #22d3ee;
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 18px;
+  background: #22d3ee;
+  animation: blink 1s infinite;
+}
+
+@keyframes floatTerminal {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); 
   }
 }
 
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .terminal-card {
+    margin: 48px auto 0;
+    text-align: left;
+    animation: floatTerminal 6s ease-in-out infinite; 
+  }
+}
