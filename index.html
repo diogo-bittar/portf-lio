@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Diogo Bittar | Portfolio</title>
+  <title>DB | Portfólio</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <script src="script.js" defer></script>
 </head>
@@ -11,7 +13,7 @@
 
 <header>
   <nav aria-label="Navegação principal">
-    <div class="nav-logo" onclick="showView('home')">DB</div>
+    <div class="nav-logo" onclick="showView('home')">&lt;&gt;</div>
     <ul>
       <li><a href="javascript:void(0)" onclick="showView('sobre')" data-view="sobre">Sobre</a></li>
       <li><a href="javascript:void(0)" onclick="showView('formacao')" data-view="formacao">Formação</a></li>
@@ -23,17 +25,39 @@
 
 <main>
 
-  <section id="home" class="view active">
-    <div class="home-content">
-      <p class="home-tag">Software Engineering</p>
-      <h1 class="home-title">Diogo <span>Bittar</span> Pedro</h1>
-      <p class="home-sub">Estudante de Engenharia de Software na FIAP, foco em back-end. Automação, APIs e dados.</p>
-      <div class="home-btns">
-        <button class="btn-primary" onclick="showView('projetos')">Ver projetos</button>
-        <button class="btn-outline" onclick="showView('contato')">Entrar em contato</button>
+<section id="home" class="view active">
+  <div class="home-content">
+    <p class="home-tag">Software Engineering</p>
+
+    <h1 class="home-title">
+      Diogo <span>Bittar</span> Pedro
+    </h1>
+
+    <p class="home-sub">
+      Estudante de Engenharia de Software em desenvolvimento. 
+    </p>
+
+    <div class="terminal-card">
+      <div class="terminal-header">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="terminal-body">
+        <p>
+          <span class="code-key">while</span>(<span class="code-key">true</span>) {
+        </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;programar();</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;evoluir();</p>
+        <p>}</p>
+
+        <span class="cursor"></span>
       </div>
     </div>
-  </section>
+
+  </div>
+</section>
 
   <section id="sobre" class="view">
     <div class="view-inner">
@@ -44,12 +68,11 @@
           <p>My name is <span class="highlight">Diogo</span>, and I am currently studying <span class="highlight">Software Engineering</span> at <span class="highlight">FIAP</span>. I have been developing my programming skills, with a stronger focus on <span class="highlight">Python</span>, while also learning other technologies such as <span class="highlight">JavaScript</span> and <span class="highlight">web development</span>.</p>
           <p>My goal is to keep improving my technical skills and become a complete <span class="highlight">Full Stack developer</span>. I also value <span class="highlight">teamwork</span>, <span class="highlight">communication</span>, and <span class="highlight">continuous learning</span>. I have basic <span class="highlight">English</span> skills and I am always working to improve them.</p>
           <div class="skills-list">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">Power BI</span>
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">GitHub</span>
-          </div>
+  <span class="skill-tag"><i class="devicon-python-plain"></i> </span>
+  <span class="skill-tag"><i class="devicon-javascript-plain"></i> </span>
+  <span class="skill-tag"><i class="devicon-git-plain"></i> </span>
+  <span class="skill-tag"><i class="devicon-github-original"></i> </span>
+</div>
         </div>
         <div class="sobre-info">
           <div class="info-item">
