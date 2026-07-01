@@ -4,6 +4,7 @@ function showView(id) {
   const target = document.getElementById(id);
   if (target) target.classList.add('active');
 
+
   document.querySelectorAll('nav a').forEach(a => {
     a.classList.toggle('active', a.dataset.view === id);
   });
@@ -11,6 +12,19 @@ function showView(id) {
   window.scrollTo({ top: 0 });
 }
 
+
 document.querySelectorAll('nav a').forEach(a => {
-  a.addEventListener('click', e => e.preventDefault());
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const viewId = a.dataset.view;
+    
+    if (viewId) {
+      showView(viewId);
+    }
+  });
+});
+
+// Inicializa a página na home
+document.addEventListener('DOMContentLoaded', () => {
+  showView('home');
 });
