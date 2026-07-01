@@ -9,8 +9,8 @@ O portfólio foi projetado para servir como uma plataforma central de apresenta�
 
 ## Tecnologias Utilizadas no portfólio
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 
 ## Funcionalidades
@@ -40,22 +40,21 @@ Abra o arquivo `index.html` em qualquer navegador moderno.
 ## Estrutura do Projeto
 
 ```text
-├── assets/
 ├── css/
-├── js/
-├── index.html
+├── index.html/
+├── script.js/
 └── README.md
 ```
 
 ## Objetivos
 
-* Ingressar na área tecnológica;
+* Contribuir na área tecnológica;
 * Disponibilizar meus principais projetos em um único ambiente;
 * Demonstrar meu desenvolvimento e meu conhecimento.
 
 ---
 
-Desenvolvido por Diogo Bittar.
+Desenvolvido por Diogo Bittar Pedro.
 
 ```
 ```
