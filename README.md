@@ -12,6 +12,7 @@ O portf√≥lio foi projetado para servir como uma plataforma central de apresenta√
 - HTML
 - CSS
 - JavaScript
+- Claude + Gemini (design e limpeza)
 
 ## Funcionalidades
 
