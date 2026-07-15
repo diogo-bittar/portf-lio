@@ -20,46 +20,42 @@
       <li><a href="#sobre" data-view="sobre">Sobre</a></li>
       <li><a href="#formação" data-view="formacao">Formação</a></li>
       <li><a href="#projetos" data-view="projetos">Projetos</a></li>
+      <li><a href="#certificados" data-view="certificados">Certificados</a></li>
       <li><a href="#contato" data-view="contato">Contato</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
+  <section id="home" class="view active" aria-labelledby="home-title">
+    <div class="home-content">
+      <p class="home-tag">Olá, eu sou</p>
 
-<section id="home" class="view active" aria-labelledby="home-title">
-  <div class="home-content">
-    <p class="home-tag">Olá, eu sou</p>
+      <h1 id="home-title" class="home-title">
+        Diogo <span>Bittar</span> Pedro
+      </h1>
 
-    <h1 id="home-title" class="home-title">
-      Diogo <span>Bittar</span> Pedro
-    </h1>
+      <p class="home-sub">
+        Estudante de Engenharia de Software em desenvolvimento.
+      </p>
 
-    <p class="home-sub">
-      Estudante de Engenharia de Software em desenvolvimento.
-    </p>
+      <div class="terminal-card" role="img" aria-label="Trecho de código ilustrativo: loop infinito programar e evoluir">
+        <div class="terminal-header">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-    <div class="terminal-card" role="img" aria-label="Trecho de código ilustrativo: loop infinito programar e evoluir">
-      <div class="terminal-header">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <div class="terminal-body">
-        <p>
-          <span class="code-key">while</span>(<span class="code-key">true</span>) {
-        </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;programar();</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;evoluir();</p>
-        <p>}</p>
-
-        <span class="cursor" aria-hidden="true"></span>
+        <div class="terminal-body">
+          <p><span class="code-key">while</span>(<span class="code-key">true</span>) {</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;programar();</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;evoluir();</p>
+          <p>}</p>
+          <span class="cursor" aria-hidden="true"></span>
+        </div>
       </div>
     </div>
-
-  </div>
-</section>
+  </section>
 
   <section id="sobre" class="view" aria-labelledby="sobre-title">
     <div class="view-inner">
@@ -67,35 +63,49 @@
       <div class="section-divider"></div>
       <div class="sobre-grid">
         <div class="sobre-text">
-          <p class="sobre-lead">My name is <span class="highlight">Diogo</span>, and I am currently studying <span class="highlight">Software Engineering</span> at <span class="highlight">FIAP</span>.</p>
-          <p>I have been developing my programming skills, with a stronger focus on <span class="highlight">Python</span>, while also learning other technologies such as <span class="highlight">JavaScript</span> and <span class="highlight">web development</span>. My goal is to keep improving my technical skills and become a complete <span class="highlight">Full Stack developer</span>.</p>
-          <p>I also value <span class="highlight">teamwork</span>, <span class="highlight">communication</span>, and <span class="highlight">continuous learning</span>. I have basic <span class="highlight">English</span> skills and I am always working to improve them.</p>
-          <p class="skills-heading">Stack</p>
-          <ul class="skills-list" aria-label="Tecnologias principais">
-            <li class="skill-tag"><i class="devicon-python-plain" aria-hidden="true"></i><span class="sr-only">Python</span></li>
-            <li class="skill-tag"><i class="devicon-javascript-plain" aria-hidden="true"></i><span class="sr-only">JavaScript</span></li>
-            <li class="skill-tag"><i class="devicon-git-plain" aria-hidden="true"></i><span class="sr-only">Git</span></li>
-            <li class="skill-tag"><i class="devicon-github-original" aria-hidden="true"></i><span class="sr-only">GitHub</span></li>
-          </ul>
+          <p class="sobre-lead">
+            <span class="highlight">Hello World! </span>Me chamo <span class="highlight">Diogo</span>, estudante de <span class="highlight">Engenharia de Software</span> na <span class="highlight">FIAP</span>.
+          </p>
+
+          <p>
+            Meu foco é <span class="highlight">Python</span> e <span class="highlight">JavaScript</span> na parte do <span class="highlight">Back-end</span>. Busco aprimorar minha base lógica para desenvolver<span class="highlight"> soluções eficientes</span> aos desafios atuais e <span class="highlight">anseio</span> ampliar meus conhecimentos em <span class="highlight">Next.js</span>, <span class="highlight">C</span> e <span class="highlight">Docker</span> para me tornar um desenvolvedor completo.
+          </p>
+          <p>
+            Possuo conhecimento báscico em<span class="highlight"> inglês</span> e busco evoluir continuamente para ampliar meu repertório. Valorizo o <span class="highlight">trabalho em equipe</span>, a <span class="highlight">escuta ativa</span> e o <span class="highlight">aprendizado contínuo</span>.
+          </p>
+          <div class="skills-container">
+            <p class="skills-heading">Stack</p>
+            <div class="skills-divider"></div>
+
+            <ul class="skills-list" aria-label="Tecnologias principais">
+                <li class="skill-tag"><i class="devicon-python-plain"></i></li>
+                <li class="skill-tag"><i class="devicon-javascript-plain"></i></li>
+                <li class="skill-tag"><i class="devicon-git-plain"></i></li>
+                <li class="skill-tag"><i class="devicon-github-original"></i></li>
+            </ul>
+
+            <p class="skills-heading future-title">
+                Futuras
+                <span class="future-loading">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </p>
+            <div class="skills-divider"></div>
+            <ul class="skills-list future-skills" aria-label="Tecnologias futuras">
+                <li class="skill-tag future">
+                    <i class="devicon-nextjs-plain"></i>
+                </li>
+                <li class="skill-tag future">
+                    <i class="devicon-c-plain"></i>
+                </li>
+                <li class="skill-tag future">
+                    <i class="devicon-docker-plain"></i>
+                </li>
+            </ul>
+          </div>
         </div>
-        <dl class="sobre-info">
-          <div class="info-item">
-            <dt class="info-label">Localização</dt>
-            <dd class="info-value">São Paulo, SP</dd>
-          </div>
-          <div class="info-item">
-            <dt class="info-label">Empresa</dt>
-            <dd class="info-value">SNEF Brasil</dd>
-          </div>
-          <div class="info-item">
-            <dt class="info-label">Faculdade</dt>
-            <dd class="info-value">FIAP</dd>
-          </div>
-          <div class="info-item">
-            <dt class="info-label">Foco</dt>
-            <dd class="info-value">Back-end & Automação</dd>
-          </div>
-        </dl>
       </div>
     </div>
   </section>
@@ -105,7 +115,6 @@
       <h2 id="formacao-title">Formação <span>e Experiência</span></h2>
       <div class="section-divider"></div>
       <div class="trajectory-grid">
-
         <div class="trajectory-column">
           <h2>Experiência <span>Profissional</span></h2>
           <div class="section-divider"></div>
@@ -140,7 +149,6 @@
             </li>
           </ol>
         </div>
-
       </div>
     </div>
   </section>
@@ -172,6 +180,40 @@
     </div>
   </section>
 
+  <!-- <section id="certificados" class="view" aria-labelledby="certificados-title">
+    <div class="view-inner">
+      <h2 id="certificados-title">Certificados <span>e Conquistas</span></h2>
+      <div class="section-divider"></div>
+      <div class="certificates-grid">
+
+        <article class="certificate-card">
+          <a href="LINK_DO_CERTIFICADO_1" target="_blank" rel="noopener noreferrer" class="certificate-link">
+            <img src="./css/img/certificado-1.png" alt="Certificado 1" class="certificate-img">
+          </a>
+        </article>
+
+        <article class="certificate-card">
+          <a href="LINK_DO_CERTIFICADO_2" target="_blank" rel="noopener noreferrer" class="certificate-link">
+            <img src="./css/img/certificado-2.png" alt="Certificado 2" class="certificate-img">
+          </a>
+        </article>
+
+        <article class="certificate-card">
+          <a href="LINK_DO_CERTIFICADO_3" target="_blank" rel="noopener noreferrer" class="certificate-link">
+            <img src="./css/img/certificado-3.png" alt="Certificado 3" class="certificate-img">
+          </a>
+        </article>
+
+        <article class="certificate-card">
+          <a href="LINK_DO_CERTIFICADO_4" target="_blank" rel="noopener noreferrer" class="certificate-link">
+            <img src="./css/img/certificado-4.png" alt="Certificado 4" class="certificate-img">
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section> -->
+
   <section id="contato" class="view" aria-labelledby="contato-title">
     <div class="view-inner">
       <h2 id="contato-title">Entrar em <span>Contato</span></h2>
@@ -186,10 +228,7 @@
             <i class="devicon-github-original contact-icon" aria-hidden="true"></i>
             <span>GitHub</span>
           </a>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bittard58@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-link">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bittard58@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-link">
             <svg class="contact-icon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
               <path fill="currentColor" d="M22.5 6.5v11a2 2 0 0 1-2 2h-1.5v-9.4l-7 5.4-7-5.4v9.4H3.5a2 2 0 0 1-2-2v-11a2 2 0 0 1 2-2h.7l7.8 6 7.8-6h.7a2 2 0 0 1 2 2Z"/>
             </svg>
@@ -203,7 +242,6 @@
       </div>
     </div>
   </section>
-
 </main>
 
 <footer>
