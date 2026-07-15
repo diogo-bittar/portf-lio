@@ -11,6 +11,8 @@
 </head>
 <body>
 
+<div class="bg-layer" aria-hidden="true"></div>
+
 <header>
   <nav aria-label="Navegação principal">
     <a href="#home" class="nav-logo" data-view="home" aria-label="Ir para o início">&lt;&gt;</a>
@@ -27,7 +29,7 @@
 
 <section id="home" class="view active" aria-labelledby="home-title">
   <div class="home-content">
-    <p class="home-tag">Software Engineering</p>
+    <p class="home-tag">Olá, eu sou</p>
 
     <h1 id="home-title" class="home-title">
       Diogo <span>Bittar</span> Pedro
@@ -65,8 +67,10 @@
       <div class="section-divider"></div>
       <div class="sobre-grid">
         <div class="sobre-text">
-          <p>My name is <span class="highlight">Diogo</span>, and I am currently studying <span class="highlight">Software Engineering</span> at <span class="highlight">FIAP</span>. I have been developing my programming skills, with a stronger focus on <span class="highlight">Python</span>, while also learning other technologies such as <span class="highlight">JavaScript</span> and <span class="highlight">web development</span>.</p>
-          <p>My goal is to keep improving my technical skills and become a complete <span class="highlight">Full Stack developer</span>. I also value <span class="highlight">teamwork</span>, <span class="highlight">communication</span>, and <span class="highlight">continuous learning</span>. I have basic <span class="highlight">English</span> skills and I am always working to improve them.</p>
+          <p class="sobre-lead">My name is <span class="highlight">Diogo</span>, and I am currently studying <span class="highlight">Software Engineering</span> at <span class="highlight">FIAP</span>.</p>
+          <p>I have been developing my programming skills, with a stronger focus on <span class="highlight">Python</span>, while also learning other technologies such as <span class="highlight">JavaScript</span> and <span class="highlight">web development</span>. My goal is to keep improving my technical skills and become a complete <span class="highlight">Full Stack developer</span>.</p>
+          <p>I also value <span class="highlight">teamwork</span>, <span class="highlight">communication</span>, and <span class="highlight">continuous learning</span>. I have basic <span class="highlight">English</span> skills and I am always working to improve them.</p>
+          <p class="skills-heading">Stack</p>
           <ul class="skills-list" aria-label="Tecnologias principais">
             <li class="skill-tag"><i class="devicon-python-plain" aria-hidden="true"></i><span class="sr-only">Python</span></li>
             <li class="skill-tag"><i class="devicon-javascript-plain" aria-hidden="true"></i><span class="sr-only">JavaScript</span></li>
@@ -98,14 +102,15 @@
 
   <section id="formacao" class="view" aria-labelledby="formacao-title">
     <div class="view-inner">
-      <h2 id="formacao-title" class="sr-only">Formação e Experiência</h2>
+      <h2 id="formacao-title">Formação <span>e Experiência</span></h2>
+      <div class="section-divider"></div>
       <div class="trajectory-grid">
 
         <div class="trajectory-column">
           <h2>Experiência <span>Profissional</span></h2>
           <div class="section-divider"></div>
           <ol class="timeline">
-            <li class="timeline-item">
+            <li class="timeline-item is-current">
               <div class="timeline-content">
                 <p class="timeline-period"><time datetime="2026">2026</time> — Atual</p>
                 <p class="timeline-title">Assistente Administrativo - Diretoria</p>
@@ -119,7 +124,7 @@
           <h2>Formação <span>Acadêmica</span></h2>
           <div class="section-divider"></div>
           <ol class="timeline">
-            <li class="timeline-item">
+            <li class="timeline-item is-current">
               <div class="timeline-content">
                 <p class="timeline-period"><time datetime="2026">2026</time> — <time datetime="2029">2029</time></p>
                 <p class="timeline-title">Engenharia de Software</p>
