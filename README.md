@@ -1,13 +1,12 @@
-````md
 # Portfólio
 
-Este repositório contém o código-fonte do meu portfólio pessoal, desenvolvido com o objetivo de apresentar minha trajetória acadêmica, habilidades técnicas e projetos desenvolvidos ao longo da minha formação na área de tecnologia.
+Repositório do meu portfólio pessoal, desenvolvido para apresentar minha trajetória acadêmica, habilidades técnicas e projetos na área de tecnologia.
 
 ## Sobre o Projeto
 
-O portfólio foi projetado para servir como uma plataforma central de apresentação profissional, reunindo informações relevantes sobre minha formação, experiências, competências e principais trabalhos desenvolvidos.
+Plataforma central de apresentação profissional, reunindo formação, experiências, competências e principais trabalhos desenvolvidos.
 
-## Tecnologias Utilizadas no portfólio
+## Tecnologias
 
 - HTML
 - CSS
@@ -20,42 +19,39 @@ O portfólio foi projetado para servir como uma plataforma central de apresenta�
 - Exibição de projetos desenvolvidos
 - Seção de habilidades técnicas
 - Links para redes profissionais e contato
-- Interface responsiva para diferentes dispositivos
+- Interface responsiva
 
-## Executando o Projeto
-
-Clone o repositório:
+## Como executar
 
 ```bash
 git clone https://github.com/diogo-bittar/portf-lio.git
-````
-
-Acesse a pasta do projeto:
-
-```bash
 cd portf-lio
 ```
 
-Abra o arquivo `index.html` em qualquer navegador moderno.
+Abra o `index.html` em qualquer navegador moderno.
 
-## Estrutura do Projeto
+## Estrutura
 
 ```text
 ├── css/
-├── index.html/
-├── script.js/
+├── img/
+├── index.html
+├── script.js
+├── LICENSE
 └── README.md
 ```
 
 ## Objetivos
 
-* Contribuir na área tecnológica;
-* Disponibilizar meus principais projetos em um único ambiente;
-* Demonstrar meu desenvolvimento e meu conhecimento.
+- Contribuir na área tecnológica
+- Disponibilizar meus principais projetos em um único ambiente
+- Demonstrar meu desenvolvimento e conhecimento
+
+## Licença
+
+Este projeto está sob a licença especificada em [LICENSE](./LICENSE).
 
 ---
 
 Desenvolvido por Diogo Bittar Pedro.
 
-```
-```
