@@ -1,28 +1,32 @@
-function showView(id) {
-  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
-
-  const target = document.getElementById(id);
-  if (target) target.classList.add('active');
-
-  document.querySelectorAll('nav a').forEach(a => {
-    a.classList.toggle('active', a.dataset.view === id);
+// Exibe uma seção do portfólio e atualiza o estado visual do menu.
+const mostrarView = (id) => {
+  document.querySelectorAll('.view').forEach((view) => {
+    view.classList.remove('active');
   });
 
-  window.scrollTo({ top: 0 });
-}
+  const alvo = document.getElementById(id);
+  if (alvo) {
+    alvo.classList.add('active');
+  }
 
-document.querySelectorAll('nav a').forEach(a => {
-  a.addEventListener('click', e => {
-    e.preventDefault();
-    const viewId = a.dataset.view;
-    
+  document.querySelectorAll('nav a[data-view]').forEach((link) => {
+    link.classList.toggle('active', link.dataset.view === id);
+  });
+};
+
+// Vincula cada item do menu à mudança de seção.
+document.querySelectorAll('nav a[data-view]').forEach((link) => {
+  link.addEventListener('click', (evento) => {
+    evento.preventDefault();
+    const viewId = link.dataset.view;
+
     if (viewId) {
-      showView(viewId);
+      mostrarView(viewId);
     }
   });
 });
 
-// Inicializa a página na home
+// Inicializa a página com a seção inicial ativa.
 document.addEventListener('DOMContentLoaded', () => {
-  showView('home');
+  mostrarView('home');
 });
