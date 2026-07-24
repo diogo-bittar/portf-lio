@@ -65,12 +65,13 @@ header {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 20px 8%;
   gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px;
 }
 
 .nav-logo {
@@ -91,7 +92,11 @@ nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
   gap: 30px;
+  margin-left: auto;
+  min-width: 0;
 }
 
 nav a {
@@ -100,6 +105,8 @@ nav a {
   font-weight: 500;
   font-size: 0.95rem;
   position: relative;
+  display: inline-flex;
+  align-items: center;
   transition: color 0.2s ease;
 }
 
@@ -676,7 +683,7 @@ footer {
 @media (max-width: 768px) {
   nav {
     padding: 16px 20px;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     align-items: flex-start;
   }
 
@@ -684,6 +691,7 @@ footer {
     width: 100%;
     gap: 14px;
     justify-content: flex-start;
+    margin-left: 0;
     overflow-x: auto;
     white-space: nowrap;
     -ms-overflow-style: none; 
