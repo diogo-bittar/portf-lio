@@ -28,7 +28,7 @@ git clone https://github.com/diogo-bittar/portf-lio.git
 cd portf-lio
 ```
 
-Abra o `index.html` em qualquer navegador moderno.
+Abra o `index.html` em qualquer navegador.
 
 ## Estrutura
 
